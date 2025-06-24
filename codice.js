@@ -4,9 +4,7 @@ function login() {
     const username = document.getElementById('username').value.trim();
     if (username) {
       localStorage.setItem('utente', username);
-      alert(username);
       window.location.href = 'inizio.html';
-      alert(username);
     } else {
       alert('Inserisci un nome utente!');
     }
