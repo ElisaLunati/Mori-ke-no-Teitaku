@@ -3,17 +3,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mori-ke no Teitaku</title>
+    <link rel="stylesheet" href="css.css"> <!-- Ti ho aggiunto la linea per collegare il foglio CSS -->
     <script src="codice.js"></script>
+
+    <!-- QUI C'E' IL COLLEGAMENTO AL FONT GOOGLE PER IL TITOLO Dovrebbe essere solo per la pagina Index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Mori-ke no Teitaku</h1>
-    <h2>Legami Spiritici</h2>
-    <p>
+<body class="body_menu"> 
+    <h1 class="h1_menu">Mori-ke no Teitaku</h1>
+    <h2>LEGAMI SPIRITICI</h2>
+    <p class="p_menu">
         Benvenuto giocatore! <br>
         La Carciofi inc spera che tu sia pronto per immergerti in questa avventura testuale! <br>
         Innanzitutto dicci: come vuoi essere chiamato?
     </p>
-    <input type="text" id="username" placeholder="Nome utente">
-    <button onclick="login()">Login</button>
+    <input class="index_input" type="text" id="username" placeholder="Nome utente">
+    <button class="index_button" onclick="login()">Login</button>
+    <br>
+    <img src="IMG.png" alt="LOGO">  <!-- HO AGGIUNTO L'IMMAGINE -->
 </body>
 </html>

@@ -4,19 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mori-ke no Teitaku</title>
     <script src="codice.js"></script>
+
+    <link rel="stylesheet" href="css.css"> <!-- Ti ho aggiunto la linea per collegare il foglio CSS -->
+
+     <!-- QUI C'E' IL COLLEGAMENTO AL FONT GOOGLE PER IL TITOLO Dovrebbe essere solo per la pagina Index.html -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <h1>Mori-ke no Teitaku</h1>
-    <h2>Legami Spiritici</h2>
+<body class="body_menu">
+    <h1 class="h1_menu">Mori-ke no Teitaku</h1>
+    <h2>LEGAMI SPIRITICI</h2>
     <div id="nomeGiocatore"></div>
-    <p>Speriamo che tu sia pronto ad immergerti nella nostra avventura testuale!</p>
-    <p>
+    <p class="p_menu">Speriamo che tu sia pronto ad immergerti nella nostra avventura testuale!</p>
+    <p class="p_menu" class="escludi">
         Come prima cosa dicci: cosa vuoi fare?
         <button id="gioca" onclick="play();">Iniziare a giocare</button>
-        <button id="capitoli" disabled>Scegliere un capitolo</button> <!-- BOTTONE TEMPORANEAMENTE DISATTIVATO -->
+        <button id="capitoli" onclick="window.location.href='capitoli.html'">Vai alla scelta dei capitoli</button>
+        <button id="tutorial" disabled>Tutorial</button> <!-- BOTTONE TEMPORANEAMENTE DISATTIVATO -->
     </p>
     <script>
         Ringraziamento();
     </script>
+
+    <img src="IMG.png" alt="LOGO"> <!-- HO AGGIUNTO L'IMMAGINE -->
+
 </body>
 </html>
