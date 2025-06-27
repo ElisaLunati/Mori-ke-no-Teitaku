@@ -16,16 +16,21 @@
 <body class="body_menu">
     <h1 class="h1_menu">Mori-ke no Teitaku</h1>
     <h2>LEGAMI SPIRITICI</h2>
-    <div id="nomeGiocatore"></div>
+    <p>
+        <p style="display: inline;">Grazie</p>
+        <p id="nomeGiocatore" style="display: inline;"></p>
+        <p style="display: inline;">!</p>
+    </p>
     <p class="p_menu">Speriamo che tu sia pronto ad immergerti nella nostra avventura testuale!</p>
     <p class="p_menu" class="escludi">
         Come prima cosa dicci: cosa vuoi fare?
         <button id="gioca" onclick="play();">Iniziare a giocare</button>
         <button id="capitoli" onclick="window.location.href='capitoli.html'">Vai alla scelta dei capitoli</button>
         <button id="tutorial" disabled>Tutorial</button> <!-- BOTTONE TEMPORANEAMENTE DISATTIVATO -->
+        <button id="trailer" disabled>Trailer</button> <!-- BOTTONE TEMPORANEAMENTE DISATTIVATO -->
     </p>
     <script>
-        Ringraziamento();
+        NomeGiocatore();
     </script>
 
     <img src="IMG.png" alt="LOGO"> <!-- HO AGGIUNTO L'IMMAGINE -->

@@ -136,94 +136,111 @@ function recuperaVariabile(chiave) {
     //Questa sezione è essenziale, in quanto fa in modo che ogni volta che si ricarica la pagina tutte le variabili vengono ripescate dal local storage e rimesse nei rispettivi var, così da poter essere usate nelle funzioni
 
 // C1
+/*
+var c1v1 = recuperaVariabile('c1v1');
+if (c1v1 == null) {
+    c1v1 = 0;
+    salvaVariabile('c1v1', 0);
+}
 
-    var c1v1 = recuperaVariabile('c1v1');
-    if (c1v1 == null) {
-        c1v1 = 0;
-        salvaVariabile('c1v1', 0);
-    }
+var c1v2 = recuperaVariabile('c1v2');
+if (c1v2 == null) {
+    c1v2 = 0;
+    salvaVariabile('c1v2', 0);
+}
 
-    var c1v2 = recuperaVariabile('c1v2');
-    if (c1v2 == null) {
-        c1v2 = 0;
-        salvaVariabile('c1v2', 0);
-    }
+var c1v3 = recuperaVariabile('c1v3');
+if (c1v3 == null) {
+    c1v3 = 0;
+    salvaVariabile('c1v3', 0);
+}
 
-    var c1v3 = recuperaVariabile('c1v3');
-    if (c1v3 == null) {
-        c1v3 = 0;
-        salvaVariabile('c1v3', 0);
-    }
+var c1v4 = recuperaVariabile('c1v4');
+if (c1v4 == null) {
+    c1v4 = 0;
+    salvaVariabile('c1v4', 0);
+}
+var c1v5 = recuperaVariabile('c1v5');
+if (c1v5 == null) {
+    c1v5 = 0;
+    salvaVariabile('c1v5', 0);
+}
+var c1v6 = recuperaVariabile('c1v6');
+if (c1v6 == null) {
+    c1v6 = 0;
+    salvaVariabile('c1v6', 0);
+}
+var c1v7 = recuperaVariabile('c1v7');
+if (c1v7 == null) {
+    c1v7 = 0;
+    salvaVariabile('c1v7', 0);
+}
 
-    var c1v4 = recuperaVariabile('c1v4');
-    if (c1v4 == null) {
-        c1v4 = 0;
-        salvaVariabile('c1v4', 0);
-    }
-    var c1v5 = recuperaVariabile('c1v5');
-    if (c1v5 == null) {
-        c1v5 = 0;
-        salvaVariabile('c1v5', 0);
-    }
-    var c1v6 = recuperaVariabile('c1v6');
-    if (c1v6 == null) {
-        c1v6 = 0;
-        salvaVariabile('c1v6', 0);
-    }
-    var c1v7 = recuperaVariabile('c1v7');
-    if (c1v7 == null) {
-        c1v7 = 0;
-        salvaVariabile('c1v7', 0);
-    }
+var c1v8 = recuperaVariabile('c1v8');
+if (c1v8 == null) {
+    c1v8 = 0;
+    salvaVariabile('c1v8', 0);
+}
+var c1v9 = recuperaVariabile('c1v9');
+if (c1v9 == null) {
+    c1v9 = 0;
+    salvaVariabile('c1v9', 0);
+}
+var c1v10 = recuperaVariabile('c1v10');
+if (c1v10 == null) {
+    c1v10 = 0;
+    salvaVariabile('c1v10', 0);
+}
+var c1v11 = recuperaVariabile('c1v11');
+if (c1v11 == null) {
+    c1v11 = 0;
+    salvaVariabile('c1v11', 0);
+}
+var c1v12 = recuperaVariabile('c1v12');
+if (c1v12 == null) {
+    c1v12 = 0;
+    salvaVariabile('c1v12', 0);
+}
+var c1v13 = recuperaVariabile('c1v13');
+if (c1v13 == null) {
+    c1v13 = 0;
+    salvaVariabile('c1v13', 0);
+}
+var c1v14 = recuperaVariabile('c1v14');
+if (c1v14 == null) {
+    c1v14 = 0;
+    salvaVariabile('c1v14', 0);
+}
 
-    var c1v8 = recuperaVariabile('c1v8');
-    if (c1v8 == null) {
-        c1v8 = 0;
-        salvaVariabile('c1v8', 0);
+var relazione_gatto = recuperaVariabile('relGatto');
+if (relazione_gatto == null) {
+    relazione_gatto = 0;
+    salvaVariabile('relGatto', 0);
+}
+*/
+   for (var i = 1; i <= 15; i++) {
+    var nomeVar = 'c1v' + i;
+    var valore = recuperaVariabile(nomeVar);
+    if (valore == null) {
+        valore = 0;
+        salvaVariabile(nomeVar, 0);
     }
-    var c1v9 = recuperaVariabile('c1v9');
-    if (c1v9 == null) {
-        c1v9 = 0;
-        salvaVariabile('c1v9', 0);
+    window[nomeVar] = valore; // opzionale, se vuoi avere le variabili globali come prima
     }
-    var c1v10 = recuperaVariabile('c1v10');
-    if (c1v10 == null) {
-        c1v10 = 0;
-        salvaVariabile('c1v10', 0);
-    }
-    var c1v11 = recuperaVariabile('c1v11');
-    if (c1v11 == null) {
-        c1v11 = 0;
-        salvaVariabile('c1v11', 0);
-    }
-    var c1v12 = recuperaVariabile('c1v12');
-    if (c1v12 == null) {
-        c1v12 = 0;
-        salvaVariabile('c1v12', 0);
-    }
-    var c1v13 = recuperaVariabile('c1v13');
-    if (c1v13 == null) {
-        c1v13 = 0;
-        salvaVariabile('c1v13', 0);
-    }
-    var c1v14 = recuperaVariabile('c1v14');
-    if (c1v14 == null) {
-        c1v14 = 0;
-        salvaVariabile('c1v14', 0);
-    }
-
-    var relazione_gatto = recuperaVariabile('relGatto');
-    if (relazione_gatto == null) {
-        relazione_gatto = 0;
-        salvaVariabile('relGatto', 0);
-    }
-
 
 //C2
-   
+   for (var i = 1; i <= 80; i++) {
+    var nomeVar = 'c2v' + i;
+    var valore = recuperaVariabile(nomeVar);
+    if (valore == null) {
+        valore = 0;
+        salvaVariabile(nomeVar, 0);
+    }
+    window[nomeVar] = valore; // opzionale, se vuoi avere le variabili globali come prima
+    }
         
    
-
+/*
     var c2v1 = recuperaVariabile('c2v1');
 if (c2v1 == null) {
     c2v1 = 0;
@@ -696,10 +713,7 @@ var c2v79 = recuperaVariabile('c2v79');
 if (c2v79 == null) {
     c2v79 = 0;
     salvaVariabile('c2v79', 0);
-}
-
-
-
+}*/
 
 
 var bagno = recuperaVariabile('bagno');
@@ -799,6 +813,55 @@ if (biblioteca == null) {
     biblioteca = 0;
     salvaVariabile('biblioteca', 0);
 }
+var piano_sopra = recuperaVariabile('piano_sopra');
+if (piano_sopra == null) {
+    piano_sopra = 0;
+    salvaVariabile('piano_sopra', 0);
+}
+
+
+// C3
+for (var i = 1; i <= 33; i++) {
+    var nomeVar = 'c3v' + i;
+    var valore = recuperaVariabile(nomeVar);
+    if (valore == null) {
+        valore = 0;
+        salvaVariabile(nomeVar, 0);
+    }
+    window[nomeVar] = valore; // opzionale, se vuoi avere le variabili globali come prima
+}
+
+var FinaleKamiA = recuperaVariabile('FinaleKamiA');
+if (FinaleKamiA == null) {
+    FinaleKamiA = 0;
+    salvaVariabile('FinaleKamiA', 0);
+}
+var discorso_madre = recuperaVariabile('discorso_madre');
+if (discorso_madre == null) {
+    discorso_madre = 0;
+    salvaVariabile('discorso_madre', 0);
+}
+var RelMuro = recuperaVariabile('RelMuro');
+if (RelMuro == null) {
+    RelMuro = 0;
+    salvaVariabile('RelMuro', 0);
+}
+var FinaleKamiC = recuperaVariabile('FinaleKamiC');
+if (FinaleKamiC == null) {
+    FinaleKamiC = 0;
+    salvaVariabile('FinaleKamiC', 0);
+}
+var FinaleSoloB = recuperaVariabile('FinaleSoloB');
+if (FinaleSoloB == null) {
+    FinaleSoloB = 0;
+    salvaVariabile('FinaleSoloB', 0);
+}
+var FinaleFantasmiD = recuperaVariabile('FinaleFantasmiD');
+if (FinaleFantasmiD == null) {
+    FinaleFantasmiD = 0;
+    salvaVariabile('FinaleFantasmiD', 0);
+}
+
 
 
 
@@ -834,9 +897,9 @@ function TornaHome() {
         window.location.href='c2-1.html';
     }
 
-    function Ringraziamento() {
+    function NomeGiocatore() {
         const username = localStorage.getItem('utente');
-        document.getElementById("nomeGiocatore").innerHTML = "Grazie "+username+"!";
+        document.getElementById("nomeGiocatore").innerHTML = username;
     }
 
 // C1
@@ -1433,6 +1496,243 @@ function TornaHome() {
     }
 
 
+//C3
+    function risposta_c3p2() {
+        if(RelMadre>0){
+            window.location.href='c3-5.html'
+        } else {
+            window.location.href='c3-4.html'
+        }
+    }
+    function risposta_SalaMensa() {
+        if(mensa>0){
+            if(cucina>0) {
+                if(RelMadre>0){
+                    window.location.href='c3-8.html'
+                } else {
+                    window.location.href='c3-9.html'
+                }
+            } else {
+                window.location.href='c3-7.html'
+            }
+        } else {
+            window.location.href='c3-6.html'
+        }
+    }
+    function risposta_SalaRicreazione() {
+        if(ricreazione>0){
+            window.location.href='c3-16.html'
+        } else {
+            window.location.href='c3-13.html'
+        }
+    }
+    function risposta_PianoSopra() {
+        if(piano_sopra>0) {
+            if(RelMadre>0){
+                if(discorso_madre>0){
+                    window.location.href='c3-37.html'
+                } else {
+                    window.location.href='c3-38.html'
+                }
+            } else {
+                if(biblioteca>0){
+                    window.location.href='c3-41.html'
+                } else {
+                    window.location.href='c3-39.html'
+                }
+            }
+        } else {
+            window.location.href='c3-19.html'
+        }
+    }
+    function risposta_PrimaPorta() {
+        if(RelMadre>0){
+            if(discorso_madre>0){
+                window.location.href='c3-37.html'
+            } else {
+                window.location.href='c3-38.html'
+            }
+        } else {
+            if(biblioteca>0){
+                window.location.href='c3-41.html'
+            } else {
+                window.location.href='c3-39.html'
+            }
+        }
+    }
+    function risposta_c3v1() {
+        if(RelMadre>0){
+            salvaVariabile('c3v1', 1);
+            c3v1 = recuperaVariabile('c3v1');
+            window.location.href='c3-28.html'
+            
+        } else {
+            salvaVariabile('c3v1', 1);
+            c3v1 = recuperaVariabile('c3v1');
+            window.location.href='c3-31.html'
+        }
+    }
+    function risposta_stagno() {
+        if(bagno>0){
+            window.location.href='c3-22.html'        
+        } else {
+            if(RelMadre>0){
+                window.location.href='c3-28.html'
+            } else {
+                window.location.href='c3-31.html'
+            }
+        }
+    }
+    function trigger_RelMuro_p() {
+        RelMuro = recuperaVariabile('RelMuro');
+        nuova_RelMuro = Number(RelMuro)+1;
+        salvaVariabile('RelMuro', nuova_RelMuro);
+        fRelMuro = recuperaVariabile('RelMuro');
+    }
+    function trigger_RelMuro_n() {
+        RelMuro = recuperaVariabile('RelMuro');
+        nuova_RelMuro = Number(RelMuro)-1;
+        salvaVariabile('RelMuro', nuova_RelMuro);
+        fRelMuro = recuperaVariabile('RelMuro');
+    }
+    function risposta_c3v2() {
+        salvaVariabile('c3v2', 1);
+        c3v2 = recuperaVariabile('c3v2');
+        if(RelMuro>0){
+            salvaVariabile('c3v3', 1);
+            c3v3 = recuperaVariabile('c3v3');
+            window.location.href='c3-34.html'
+            
+        } else if(RelMuro=0) {
+            salvaVariabile('c3v4', 1);
+            c3v4 = recuperaVariabile('c3v4');
+            window.location.href='c3-34.html'
+        } else {
+            window.location.href='c3-32.html'
+        }
+    }
+    function risposta_c3v16() {
+        salvaVariabile('c3v16', 1);
+        c3v16 = recuperaVariabile('c3v16');
+        if(RelMuro>0){
+            salvaVariabile('c3v3', 1);
+            c3v3 = recuperaVariabile('c3v3');
+            window.location.href='c3-34.html'
+            
+        } else if(RelMuro=0) {
+            salvaVariabile('c3v4', 1);
+            c3v4 = recuperaVariabile('c3v4');
+            window.location.href='c3-34.html'
+        } else {
+            window.location.href='c3-32.html'
+        }
+    }
+    function risposta_c3v5() {
+        salvaVariabile('c3v5', 1);
+        c3v5 = recuperaVariabile('c3v5');
+        window.location.href='c3-34.html'
+    }
+    function risposta_c3v31() {
+        salvaVariabile('c3v31', 1);
+        c3v31 = recuperaVariabile('c3v31');
+        if(biblioteca>0){
+            salvaVariabile('c3v26', 1);
+        } else {
+            salvaVariabile('c3v25', 1);
+        }
+        window.location.href='c3-55.html'
+    }
+    function risposta_c3v32() {
+        salvaVariabile('c3v32', 1);
+        c3v32 = recuperaVariabile('c3v32');
+        if(biblioteca>0){
+            salvaVariabile('c3v28', 1);
+        } else {
+            salvaVariabile('c3v27', 1);
+        }
+        window.location.href='c3-55.html'
+    }
+    function risposta_c3v32_2() {
+        salvaVariabile('c3v32', 1);
+        c3v32 = recuperaVariabile('c3v32');
+        if(biblioteca>0){
+            salvaVariabile('c3v30', 1);
+        } else {
+            salvaVariabile('c3v29', 1);
+        }
+        window.location.href='c3-55.html'
+    }
+    function GameOver3_33() {
+        window.location.href='c2-32.html'
+    }
+    function GameOver3_44() {
+        window.location.href='c2-42.html'
+    }
+    function GameOver3_45() {
+        window.location.href='c2-43.html'
+    }
+    function GameOver3_47() {
+        window.location.href='c2-46.html'
+    }
+    function GameOver3_50() {
+        window.location.href='c2-49.html'
+    }
+    function GameOver3_56() {
+        window.location.href='c2-49.html'
+    }
+    function GameOver3_61() {
+        window.location.href='c2-60.html'
+    }
+    function risposta_c3v17() {
+        salvaVariabile('c3v17', 1);
+        window.location.href='c3-41.html'
+    }
+    function risposta_c3v33() {
+        salvaVariabile('c3v33', 1);
+        window.location.href='c3-60.html'
+    }
+    function risposta_c3v34() {
+        salvaVariabile('c3v34', 1);
+        window.location.href='c3-60.html'
+    }
+    function RecuperaScelte1a() {
+        salvaVariabile(RelMadre)
+    }
+    function RecuperaScelte1() {
+        salvaVariabile('RelMadre', 1);
+        window.location.href='c3-RecuperaScelte2.html';
+    }
+    function RecuperaScelte2() {
+        salvaVariabile('bagno', 1);
+        window.location.href='c3-RecuperaScelte3.html';
+    }
+    function RecuperaScelte3() {
+        salvaVariabile('scarpe', 1);
+        window.location.href='c3-RecuperaScelte4.html';
+    }
+    function RecuperaScelte4() {
+        salvaVariabile('biblioteca', 1);
+        window.location.href='c3-RecuperaScelte5.html';
+    }
+    function RecuperaScelte5() {
+        salvaVariabile('cucina', 1);
+        window.location.href='c3-RecuperaScelte6.html';
+    }
+
+
+    function Finale() {
+        if(FinaleKamiA>0){
+            window.location.href='c4-X.html'
+            
+        } else if(FinaleKamiC>0) {
+            window.location.href='c4-X.html'
+        } else if(FinaleFantasmiD>0) {
+            window.location.href='c4-X.html'
+        } else if(FinaleSoloB>0) {
+            window.location.href='c4-X.html'
+        }
+    }
+
 //TESTI
 
     // Per mostrare il div
@@ -1895,5 +2195,133 @@ function TornaHome() {
             document.getElementById("p27").style.display = "block"
         } else if(c2v26>0) {
             document.getElementById("p26").style.display = "block"
+        }
+    }
+
+    //C3
+    function C3P12(){
+        if(camera1>0){
+            document.getElementById("p7").style.display = "block"
+        } else {
+            document.getElementById("p6").style.display = "block"
+        }
+    }
+    function C3P17(){
+        if(camera3>0){
+            document.getElementById("p7").style.display = "block"
+        } else {
+            document.getElementById("p6").style.display = "block"
+        }
+    }
+    function C3P15(){
+        if(bar>0){
+            document.getElementById("p7").style.display = "block"
+        } else {
+            document.getElementById("p6").style.display = "block"
+        }
+    }
+    function C3P18(){
+        if(camera2>0){
+            document.getElementById("p14").style.display = "block"
+        } else {
+            document.getElementById("p12").style.display = "block"
+        }
+    }
+    function C3P21(){
+        if(RelMadre>0){
+            document.getElementById("p19").style.display = "block"
+        } else {
+            document.getElementById("p20").style.display = "block"
+        }
+        if(scarpe>0){
+            document.getElementById("p21a").style.display = "block"
+        } else {
+            document.getElementById("p21b").style.display = "block"
+        }
+    }
+    function C3P28(){
+        if(c3v1>0){
+            document.getElementById("p1").style.display = "block"
+        }
+    }
+    function C3P32(){
+        if(c3v2>0){
+            document.getElementById("p2").style.display = "block"
+        } else if (c3v16>0){
+            document.getElementById("p16").style.display = "block"
+        }
+    }
+    function C3P34(){
+        if(c3v2>0){
+            document.getElementById("p2").style.display = "block"
+        } else if (c3v16>0){
+            document.getElementById("p16").style.display = "block"
+        }
+
+        if(c3v3>0){
+            document.getElementById("p3").style.display = "block"
+        } else if (c3v4>0){
+            document.getElementById("p4").style.display = "block"
+        } else if (c3v5>0){
+            document.getElementById("p5").style.display = "block"
+        }
+    }
+    function C3P39(){
+        if(piano_sopra>0){
+            document.getElementById("p22").style.display = "block"
+        } else if (c3v16>0){
+            document.getElementById("p21").style.display = "block"
+        }
+    }
+    function C3P41(){
+        if(piano_sopra>0){
+            document.getElementById("p22").style.display = "block"
+        } else if (c3v16>0){
+            document.getElementById("p21").style.display = "block"
+        }
+
+        if(c3v17>0){
+            document.getElementById("p17").style.display = "block"
+        } else {
+            document.getElementById("p23").style.display = "block"
+        }
+    }
+    function C3P55(){
+        if(c3v25>0){
+            document.getElementById("p25").style.display = "block"
+        } else if (c3v26>0){
+            document.getElementById("p26").style.display = "block"
+        } else if (c3v27>0){
+            document.getElementById("p27").style.display = "block"
+        } else if (c3v28>0){
+            document.getElementById("p28").style.display = "block"
+        } else if (c3v29>0){
+            document.getElementById("p29").style.display = "block"
+        } else if (c3v30>0){
+            document.getElementById("p30").style.display = "block"
+        }
+
+        if(c3v31>0){
+            document.getElementById("p31").style.display = "block"
+        } else if(c3v32>0) {
+            document.getElementById("p32").style.display = "block"
+        }
+
+        if(biblioteca>0){
+            document.getElementById("p23").style.display = "block"
+        } else {
+            document.getElementById("p24").style.display = "block"
+        }
+    }
+    function C3P60(){
+        if(c3v33>0){
+            document.getElementById("p33").style.display = "block"
+        } else if(c3v34>0) {
+            document.getElementById("p34").style.display = "block"
+        }
+    }
+    function C3P64(){
+        if(RelMadre<1){
+            document.getElementById("p18").style.display = "block"
         }
     }

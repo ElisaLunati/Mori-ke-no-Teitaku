@@ -1,0 +1,46 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mori-ke no Teitaku, Capitolo 3</title>
+    <script src="codice.js"></script>
+    <link rel="stylesheet" href="css.css"> <!-- Ti ho aggiunto la linea per collegare il foglio CSS -->
+
+    <!-- QUI C'E' IL COLLEGAMENTO AL FONT GOOGLE PER IL TITOLO Dovrebbe essere solo per la pagina Index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="p14" style="display: none;">
+        <p>
+           Decidi di recarti nella seconda camera da letto. Aprendo la porta noti nuovamente la bambola inquietante. <br> Rimani vicino alla porta e ti guardi attorno ma quando il tuo sguardo cade nuovamente sulla bambola è scomparsa. <br> Te ne sono successe di cose strane oggi, questa non è sicuramente la prima ma ti inqueti comunque. <br>Improvvisamente vedi un’ombra attraversare la stanza accompagnata dal rumore di piccoli passi. <br>Sobbalzi spaventato e senti un piccolo dolore alla testa, come se qualcuno ti avesse tirato i capelli. <br>Ti ricomponi e forse sollevato noti che la bambola è tornata al suo posto, ma stringe qualcosa nella manina, una piccola ciocca di capelli. <br>Intuisci che forse è meglio andartene ora che la bambola ha il suo bottino, prima che torni per te e i tuoi capelli.
+        </p>
+    </div>
+    <div id="p12" style="display: none;">
+        <p>
+       Ti trovi di fronte una comune camera da letto, con un tatami malconcio a coprire il pavimento, un piccolo tavolino in legno addossato alla parete e una vecchia sedia in vimini. <br> Dalla finestra riesci a vedere il retro del giardino. 
+    </p>
+    <p>
+       Un riflesso nella penombra attrae il tuo sguardo, ti avvicini per controllare. Trovi una bambola di porcellana scheggiata e crepata in più punti, specialmente sulla cima della testa, con fluenti capelli neri lunghi fino ai piedi. Ha una chioma bellissima, la sfiori con le dita... e un brivido ti corre giù per la schiena. 
+ 
+    </p>
+    <p>
+       Sobbalzi e lasci andare la bambola con un passo indietro. Sono capelli veri. Ti volti ed esci dalla stanza.
+
+    </p>
+    </div>
+    <p>
+        Dove vai?
+        <button onclick="risposta_SalaMensa()">Sala mensa</button>
+        <button onclick="risposta_SalaRicreazione()">Sala ricreazione</button>
+        <button onclick="window.location.href='c3-12.html'">Camera 1</button>
+        <button onclick="window.location.href='c3-18.html'">Camera 2</button>
+        <button onclick="window.location.href='c3-17.html'">Camera 3</button>
+        <button onclick="risposta_PianoSopra()">Piano di sopra</button>
+    </p>
+    <script>
+        C3P18();
+        salvaVariabile('camera2', 1);
+    </script>
+</body>
