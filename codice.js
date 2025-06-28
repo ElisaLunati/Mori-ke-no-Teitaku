@@ -1809,6 +1809,10 @@ function risposta_c2v19() {
 
 
     function Finale() {
+        FinaleKamiA = recuperaVariabile('FinaleKamiA');
+        FinaleKamiC = recuperaVariabile('FinaleKamiC');
+        FinaleSoloB = recuperaVariabile('FinaleSoloB');
+        FinaleFantasmiD = recuperaVariabile('FinaleFantasmiD');
         if(FinaleKamiA>0){
             window.location.href='c4-1.html'
             
