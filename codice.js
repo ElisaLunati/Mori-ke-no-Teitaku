@@ -1744,25 +1744,25 @@ function TornaHome() {
         window.location.href='c3-55.html'
     }
     function GameOver3_33() {
-        window.location.href='c2-32.html'
+        window.location.href='c3-32.html'
     }
     function GameOver3_44() {
-        window.location.href='c2-42.html'
+        window.location.href='c3-42.html'
     }
     function GameOver3_45() {
-        window.location.href='c2-43.html'
+        window.location.href='c3-43.html'
     }
     function GameOver3_47() {
-        window.location.href='c2-46.html'
+        window.location.href='c3-46.html'
     }
     function GameOver3_50() {
-        window.location.href='c2-49.html'
+        window.location.href='c3-49.html'
     }
     function GameOver3_56() {
-        window.location.href='c2-49.html'
+        window.location.href='c3-49.html'
     }
     function GameOver3_61() {
-        window.location.href='c2-60.html'
+        window.location.href='c3-60.html'
     }
     function risposta_c3v17() {
         salvaVariabile('c3v17', 1);
