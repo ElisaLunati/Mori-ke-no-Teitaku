@@ -1710,6 +1710,8 @@ function TornaHome() {
     }
     function risposta_c3v5() {
         salvaVariabile('c3v5', 1);
+        salvaVariabile('c3v2', 0);
+        salvaVariabile('c3v16', 0);
         c3v5 = recuperaVariabile('c3v5');
         window.location.href='c3-34.html'
     }
