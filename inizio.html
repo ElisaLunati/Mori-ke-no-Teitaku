@@ -17,17 +17,19 @@
     <h1 class="h1_menu">Mori-ke no Teitaku</h1>
     <h2>LEGAMI SPIRITICI</h2>
     <p>
-        <p style="display: inline;">Grazie</p>
-        <p id="nomeGiocatore" style="display: inline;"></p>
-        <p style="display: inline;">!</p>
+        <p class="p_menu" style="display: inline;">Grazie</p>
+        <p class="p_menu" id="nomeGiocatore" style="display: inline;"></p>
+        <p class="p_menu" style="display: inline;">!</p>
     </p>
     <p class="p_menu">Speriamo che tu sia pronto ad immergerti nella nostra avventura testuale!</p>
     <p class="p_menu" class="escludi">
-        Come prima cosa dicci: cosa vuoi fare?
-        <button id="gioca" onclick="play();">Iniziare a giocare</button>
-        <button id="capitoli" onclick="window.location.href='capitoli.html'">Vai alla scelta dei capitoli</button>
-        <button id="tutorial" disabled>Tutorial</button> <!-- BOTTONE TEMPORANEAMENTE DISATTIVATO -->
-        <button id="trailer" disabled>Trailer</button> <!-- BOTTONE TEMPORANEAMENTE DISATTIVATO -->
+        <p class="p_menu">
+            Come prima cosa dicci: cosa vuoi fare?
+        </p>
+        <button class="button_menu" id="gioca" onclick="play();">Iniziare a giocare</button>
+        <button class="button_menu" id="capitoli" onclick="window.location.href='capitoli.html'">Vai alla scelta dei capitoli</button>
+        <button class="button_menu" id="tutorial" window.location.href='tutorial.html'>Tutorial</button> <!-- BOTTONE TEMPORANEAMENTE DISATTIVATO -->
+        <button class="button_menu" id="trailer" onclick="window.location.href='trailer.html'">Trailer</button>
     </p>
     <script>
         NomeGiocatore();

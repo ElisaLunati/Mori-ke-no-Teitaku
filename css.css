@@ -44,6 +44,11 @@ h2 {
     color: white;
 }
 
+.button_menu {
+    display: inline;
+    margin-left: 10px;
+}
+
 
 .index_input {
     font-family: "montserrat";
@@ -67,6 +72,7 @@ h2 {
     padding: 10px;
     color: #000000;
     transition: background-color 0.3s; 
+    display: inline;
 }
 
 input {
@@ -133,6 +139,21 @@ p:has(button) {
     padding-bottom: 100px;
 }
 
+.video-responsivo {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-responsivo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 768px) {
     body {
         padding: 40px 20px;
@@ -173,4 +194,5 @@ p:has(button) {
         margin-top: 50px;
   
     } */
+
 }
