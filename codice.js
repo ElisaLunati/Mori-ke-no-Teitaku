@@ -2011,11 +2011,11 @@ function TornaHome() {
     }
     function risposta_c5v5() {
         salvaVariabile('c5v5', 1);
-        window.location.href='c5-6.html';
+        window.location.href='c5-14.html';
     }
     function risposta_c5v6() {
         salvaVariabile('c5v6', 1);
-        window.location.href='c5-6.html';
+        window.location.href='c5-14.html';
     }
     function risposta_c5v7() {
         salvaVariabile('c5v7', 1);
