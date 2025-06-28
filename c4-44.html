@@ -1,0 +1,83 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mori-ke no Teitaku, Capitolo 4</title>
+    <script src="codice.js"></script>
+    <link rel="stylesheet" href="css.css"> <!-- Ti ho aggiunto la linea per collegare il foglio CSS -->
+
+    <!-- QUI C'E' IL COLLEGAMENTO AL FONT GOOGLE PER IL TITOLO Dovrebbe essere solo per la pagina Index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p>
+  Arrivi in giardino e subito fuori dall’uscio trovi Yoshiyū che ti aspetta con un sorriso placido.
+</p>
+<p>
+  Isamu: “Cosa ci fai qui?”
+</p>
+<p>
+  Yoshiyū: “So dov’è il Sakaki, non volevo farti cercare a vuoto.”
+</p>
+<p>
+  Isamu: “Grazie... Ti seguo.”
+</p>
+<p>
+  Yoshiyū ti fa segno di seguirla e ti guida attraverso l’erba alta, raggiungendo un punto particolarmente selvatico sul retro della casa. Le fronde degli alberi circostanti alla recinzione sporgono sul giardino e alcuni sono cresciuti naturalmente all’interno dei confini della magione, forse aiutati dal vento. Si china su uno dei cespugli e ne strappa un rametto verde.
+</p>
+<p>
+  Yoshiyū: “Ecco qua.”
+</p>
+<p>
+  Ti porge il rametto e tu lo prendi.
+</p>
+<p>
+  Isamu: “Grazie mille. Vado a prendere il resto allora.”
+</p>
+<p>
+  La donna annuisce e ti saluta con la mano.
+</p>
+<p>
+  Yoshiyū: “A dopo!”
+</p>
+<p>
+  Torni a cercare ciò che rimane sulla lista.
+</p>
+
+    <div id="pBRi" style="display: none;">
+        <p>
+        Che oggetto prendi?
+        <button onclick="check_oggetti();">Preghiera</button>
+        <button onclick="window.location.href='c4-45.html'">Bastone</button>
+        <button onclick="window.location.href='c4-46.html'">Riso</button>
+    </p>
+    </div>
+    <div id="pB" style="display: none;">
+        <p>
+        Che oggetto prendi?
+        <button onclick="check_oggetti();">Preghiera</button>
+        <button onclick="window.location.href='c4-45.html'">Bastone</button>
+    </p>
+    </div>
+    <div id="pRi" style="display: none;">
+        <p>
+        Che oggetto prendi?
+        <button onclick="check_oggetti();">Preghiera</button>
+        <button onclick="window.location.href='c4-46.html'">Riso</button>
+    </p>
+    </div>
+    <div id="pP" style="display: none;">
+        <p>
+        Che oggetto prendi?
+        <button onclick="check_oggetti();">Preghiera</button>
+    </p>
+    </div>
+    
+    <script>
+        C4P44();
+        salvaVariabile('Ra', 1);
+        trigger_oggetti();
+    </script>
+</body>
