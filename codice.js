@@ -1849,8 +1849,10 @@ function TornaHome() {
     }
 
     function risposta_Gabinetto4() {
-        if(bagno>0){
-            window.location.href='c4-16.html'
+        if(bagno>1) { window.location.href='c4-10.html' }
+        else if(bagno>0){
+            window.location.href='c4-16.html';
+            salvaVariabile('bagno',2);
         } else {
             if(gabinetto>0){
                 window.location.href='c4-10.html'
