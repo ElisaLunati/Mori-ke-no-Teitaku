@@ -2666,7 +2666,7 @@ function TornaHome() {
         }
     }
     
-    function C4P24() {
+    function C4P2X() {
         if(capanno>0){
             document.getElementById("p2").style.display = "block"
         } else {
