@@ -2745,29 +2745,29 @@ function risposta_c2v19() {
     }
 
     function C4P43() {
-        if(B>0) {
-            if(Ri>0) {
-                if(Ra>0) {
+        if(B<0) {
+            if(Ri<0) {
+                if(Ra<0) {
                     document.getElementById("pBRiRa").style.display = "block";
                 } else {
                     document.getElementById("pBRi").style.display = "block";
                 }
             } else {
-                if(Ra>0) {
+                if(Ra<0) {
                     document.getElementById("pBRa").style.display = "block";
                 } else {
                     document.getElementById("pB").style.display = "block";
                 }
             }
         } else {
-            if(Ri>0) {
-                if(Ra>0) {
+            if(Ri<0) {
+                if(Ra<0) {
                     document.getElementById("pRiRa").style.display = "block";
                 } else {
                     document.getElementById("pRi").style.display = "block";
                 }
             } else {
-                if(Ra>0) {
+                if(Ra<0) {
                     document.getElementById("pRa").style.display = "block";
                 }
             }
@@ -2779,14 +2779,14 @@ function risposta_c2v19() {
             } else {
                 document.getElementById("p2").style.display = "block";
             }
-        if(Ra>0) {
-            if(B>0) {
+        if(Ra<0) {
+            if(B<0) {
                 document.getElementById("pRaB").style.display = "block";
             } else {
                 document.getElementById("pRa").style.display = "block";
             }
         } else {
-            if(B>0) {
+            if(B<0) {
                 document.getElementById("pB").style.display = "block";
             } else {
                 document.getElementById("pP").style.display = "block";
@@ -2801,14 +2801,14 @@ function risposta_c2v19() {
             } else {
                 document.getElementById("p3").style.display = "block";
             }
-        if(Ra>0) {
-            if(Ri>0) {
+        if(Ra<0) {
+            if(Ri<0) {
                 document.getElementById("pRaRi").style.display = "block";
             } else {
                 document.getElementById("pRa").style.display = "block";
             }
         } else {
-            if(Ri>0) {
+            if(Ri<0) {
                 document.getElementById("pRi").style.display = "block";
             } else {
                 document.getElementById("pP").style.display = "block";
@@ -2816,14 +2816,14 @@ function risposta_c2v19() {
         }
     }
     function C4P44() {
-        if(B>0) {
-            if(Ri>0) {
+        if(B<0) {
+            if(Ri<0) {
                 document.getElementById("pBRi").style.display = "block";
             } else {
                 document.getElementById("pB").style.display = "block";
             }
         } else {
-            if(Ri>0) {
+            if(Ri<0) {
                 document.getElementById("pRi").style.display = "block";
             } else {
                 document.getElementById("pP").style.display = "block";
