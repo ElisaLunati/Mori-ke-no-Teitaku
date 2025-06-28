@@ -818,6 +818,18 @@ if (piano_sopra == null) {
     piano_sopra = 0;
     salvaVariabile('piano_sopra', 0);
 }
+var gabinetto = recuperaVariabile('gabinetto');
+if (gabinetto == null) {
+    gabinetto = 0;
+    salvaVariabile('gabinetto', 0);
+}
+var pergamena = recuperaVariabile('pergamena');
+if (pergamena == null) {
+    pergamena = 0;
+    salvaVariabile('pergamena', 0);
+}
+
+
 
 
 // C3
@@ -862,8 +874,61 @@ if (FinaleFantasmiD == null) {
     salvaVariabile('FinaleFantasmiD', 0);
 }
 
+//C4
+for (var i = 1; i <= 15; i++) {
+    var nomeVar = 'c4v' + i;
+    var valore = recuperaVariabile(nomeVar);
+    if (valore == null) {
+        valore = 0;
+        salvaVariabile(nomeVar, 0);
+    }
+    window[nomeVar] = valore; // opzionale, se vuoi avere le variabili globali come prima
+}
+
+var scavato = recuperaVariabile('scavato');
+if (scavato == null) {
+    scavato = 0;
+    salvaVariabile('scavato', 0);
+}
+var oggetti = recuperaVariabile('oggetti');
+if (oggetti == null) {
+    oggetti = 0;
+    salvaVariabile('oggetti', 0);
+}
+var Ra = recuperaVariabile('Ra');
+if (Ra == null) {
+    Ra = 0;
+    salvaVariabile('Ra', 0);
+}
+
+var B = recuperaVariabile('B');
+if (B == null) {
+    B = 0;
+    salvaVariabile('B', 0);
+}
+
+var Ri = recuperaVariabile('Ri');
+if (Ri == null) {
+    Ri = 0;
+    salvaVariabile('Ri', 0);
+}
 
 
+//C5
+for (var i = 1; i <= 10; i++) {
+    var nomeVar = 'c5v' + i;
+    var valore = recuperaVariabile(nomeVar);
+    if (valore == null) {
+        valore = 0;
+        salvaVariabile(nomeVar, 0);
+    }
+    window[nomeVar] = valore; // opzionale, se vuoi avere le variabili globali come prima
+}
+var simpatia_kami = recuperaVariabile('simpatia_kami');
+if (simpatia_kami == null) {
+    simpatia_kami = 0;
+    salvaVariabile('simpatia_kami', 0);
+}
 
 
 //FUNZIONI
@@ -1546,6 +1611,7 @@ function TornaHome() {
         }
     }
     function risposta_PrimaPorta() {
+        salvaVariabile('pergamena', 1);
         if(RelMadre>0){
             if(discorso_madre>0){
                 window.location.href='c3-37.html'
@@ -1722,16 +1788,247 @@ function TornaHome() {
 
     function Finale() {
         if(FinaleKamiA>0){
-            window.location.href='c4-X.html'
+            window.location.href='c4-1.html'
             
         } else if(FinaleKamiC>0) {
-            window.location.href='c4-X.html'
+            window.location.href='c4-1.html'
         } else if(FinaleFantasmiD>0) {
-            window.location.href='c4-X.html'
+            if(RelMuro<0){
+                window.location.href='c4-42.html'
+            } else {
+                window.location.href='c4-37.html'
+            }
+            
         } else if(FinaleSoloB>0) {
-            window.location.href='c4-X.html'
+            window.location.href='c5-1.html'
         }
     }
+
+    //C4
+    function risposta_SalaMensa4() {
+        if(mensa>0){
+            if(cucina>0) {
+                if(RelMadre>0){
+                    window.location.href='c4-4.html'
+                } else {
+                    window.location.href='c4-5.html'
+                }
+            } else {
+                window.location.href='c4-3.html'
+            }
+        } else {
+            window.location.href='c4-2.html'
+        }
+    }
+
+    function risposta_SalaRicreazione4() {
+        if(ricreazione>0){
+            window.location.href='c4-12.html'
+        } else {
+            window.location.href='c4-9.html'
+        }
+    }
+
+    function risposta_Gabinetto4() {
+        if(bagno>0){
+            window.location.href='c4-16.html'
+        } else {
+            if(gabinetto>0){
+                window.location.href='c4-10.html'
+            } else {
+                window.location.href='c4-22.html'
+            }
+        }
+    }
+
+    function scava_mensa() {
+        if(FinaleKamiA>0) {
+            window.location.href='c4-36.html'
+        } else if(FinaleKamiC) {
+            window.location.href='c4-35.html'
+        }
+    }
+
+    function scava_sopra() {
+        if(piano_sopra>0) {
+            if(pergamena>0){
+                window.location.href='c4-28.html'
+            } else {
+                window.location.href='c4-29.html'
+            }
+        } else {
+            window.location.href='c4-29.html'
+        }
+    }
+
+    function trigger_scavato() {
+        scavato = recuperaVariabile('scavato');
+        nuova_scavato = Number(scavato)+1;
+        salvaVariabile('scavato', nuova_scavato);
+        scavato = recuperaVariabile('scavato');
+    }
+    function trigger_oggetti() {
+        oggetti = recuperaVariabile('oggetti');
+        nuova_oggetti = Number(oggetti)+1;
+        salvaVariabile('oggetti', nuova_oggetti);
+        oggetti = recuperaVariabile('oggetti');
+    }
+
+    function scava_c2() {
+        trigger_scavato();
+        salvaVariabile('c4v10', 1);
+        if(scavato>3){
+            window.location.href='c4-34.html'
+        } else {
+            window.location.href='c4-25.html'
+        }
+    }
+    function scava_c3() {
+        trigger_scavato();
+        salvaVariabile('c4v9', 1);
+        if(scavato>3){
+            window.location.href='c4-34.html'
+        } else {
+            window.location.href='c4-26.html'
+        }
+    }
+    function scava_ricreazione() {
+        trigger_scavato();
+        salvaVariabile('c4v7', 1);
+        if(scavato>3){
+            window.location.href='c4-34.html'
+        } else {
+            window.location.href='c4-31.html'
+        }
+    }
+    function scava_bar() {
+        trigger_scavato();
+        salvaVariabile('c4v8', 1);
+        if(scavato>3){
+            window.location.href='c4-34.html'
+        } else {
+            window.location.href='c4-32.html'
+        }
+    }
+
+    function GameOver4_34() {
+        salvaVariabile('scavato',0);
+        window.location.href='c4-24.html'
+    }
+
+    function risposta_c4v1() {
+        salvaVariabile('c4v1', 1);
+        window.location.href='c4-38.html';
+    }
+    function risposta_c4v2() {
+        salvaVariabile('c4v2', 1);
+        window.location.href='c4-39.html';
+    }
+    function risposta_c4v3() {
+        salvaVariabile('c4v3', 1);
+        window.location.href='c4-39.html';
+    }
+    function risposta_c4v4() {
+        salvaVariabile('c4v4', 1);
+        window.location.href='c4-40.html';
+    }
+    function risposta_c4v5() {
+        salvaVariabile('c4v5', 1);
+        window.location.href='c4-41.html';
+    }
+    function risposta_c4v6() {
+        salvaVariabile('c4v6', 1);
+        window.location.href='c4-41.html';
+    }
+
+    function check_oggetti() {
+        if(oggetti>=3){
+            window.location.href='c4-47.html'
+        } else {
+            window.location.href='c4-43.html'
+        }
+    }
+
+//C5
+    function risposta1a() {
+        if(RelMadre>0){
+            window.location.href='c5-2.html'
+        } else {
+            window.location.href='c5-3.html'
+        }
+    }
+    function risposta1b() {
+        if(RelMadre>0){
+            window.location.href='c5-4.html'
+        } else {
+            window.location.href='c5-5.html'
+        }
+    }
+    function risposta12a() {
+        if(RelMadre>0){
+            window.location.href='c5-21.html'
+        } else {
+            window.location.href='c5-22.html'
+        }
+    }
+    function risposta12b() {
+        if(RelMadre>0){
+            window.location.href='c5-23.html'
+        } else {
+            window.location.href='c5-24.html'
+        }
+    }
+    function risposta_c5v2() {
+        salvaVariabile('c5v2', 1);
+        window.location.href='c5-7.html';
+    }
+    function risposta_c5v3() {
+        salvaVariabile('c5v3', 1);
+        window.location.href='c5-7.html';
+    }
+    function risposta_c5v4() {
+        salvaVariabile('c5v4', 1);
+        window.location.href='c5-7.html';
+    }
+    function risposta_c5v5() {
+        salvaVariabile('c5v5', 1);
+        window.location.href='c5-6.html';
+    }
+    function risposta_c5v6() {
+        salvaVariabile('c5v6', 1);
+        window.location.href='c5-6.html';
+    }
+    function risposta_c5v7() {
+        salvaVariabile('c5v7', 1);
+        window.location.href='c5-10.html';
+    }
+    function risposta_c5v8() {
+        salvaVariabile('c5v8', 1);
+        window.location.href='c5-10.html';
+    }
+    function risposta_c5v9() {
+        salvaVariabile('c5v9', 1);
+        window.location.href='c5-10.html';
+    }
+    function risposta_c5p9() {
+        if(RelMadre>0){
+            window.location.href='c5-25.html';
+        } else {
+            window.location.href='c5-21.html';
+        }
+        
+    }
+    function risposta_c5p13() {
+        if(simpatia_kami>0){
+            window.location.href='c5-17.html';
+        } else if(c5v6>0){
+            window.location.href='c5-18.html';
+        } else {
+            window.location.href='c5-26.html';
+        }
+        
+    }
+
 
 //TESTI
 
@@ -2234,7 +2531,8 @@ function TornaHome() {
             document.getElementById("p20").style.display = "block"
         }
         if(scarpe>0){
-            document.getElementById("p21a").style.display = "block"
+            document.getElementById("p21a").style.display = "block";
+            salvaVariabile('scarpe',2);
         } else {
             document.getElementById("p21b").style.display = "block"
         }
@@ -2325,3 +2623,225 @@ function TornaHome() {
             document.getElementById("p18").style.display = "block"
         }
     }
+    function C3P54(){
+        if(RelMadre>1){
+            document.getElementById("p1").style.display = "block"
+        } else {
+            document.getElementById("p2").style.display = "block"
+        }
+    }
+
+    //C4
+    function C4P24() {
+        if(capanno>0){
+            document.getElementById("p2").style.display = "block"
+        } else {
+            document.getElementById("p1").style.display = "block"
+        }
+
+        if(chiave>0){
+            document.getElementById("p3").style.display = "block"
+        } else {
+            document.getElementById("p4").style.display = "block"
+        }
+    }
+    
+    function C4P24() {
+        if(capanno>0){
+            document.getElementById("p2").style.display = "block"
+        } else {
+            document.getElementById("p1").style.display = "block"
+        }
+
+    }
+    function C4P26() {
+        if(camera3>0){
+            document.getElementById("p1").style.display = "block"
+        }
+    }
+    function C4P27() {
+        if(camera1>0){
+            document.getElementById("p1").style.display = "block"
+        }
+    }
+    function C4P35() {
+        if(mensa<1){
+            document.getElementById("p1").style.display = "block"
+        }
+    }
+    function C4P37() {
+        if(RelMadre<1){
+            document.getElementById("p1").style.display = "block"
+        }
+    }
+    function C4P38() {
+        if(c4v1>0){
+            document.getElementById("p4").style.display = "block"
+        }
+    }
+    function C4P40() {
+        if(c4v4>0){
+            document.getElementById("p1").style.display = "block"
+        }
+    }
+    function C4P39() {
+        if(c4v2>0){
+            document.getElementById("p2").style.display = "block"
+        } else if(c4v3>0){
+            document.getElementById("p3").style.display = "block"
+        }
+    }
+    function C4P41() {
+        if(c4v5>0){
+            document.getElementById("p5").style.display = "block"
+        } else if(c4v6>0){
+            document.getElementById("p6").style.display = "block"
+        }
+    }
+
+    function C4P34() {
+        if(c4v7>0){
+            document.getElementById("p7").style.display = "block"
+        } else if(c4v8>0){
+            document.getElementById("p8").style.display = "block"
+        } else if(c4v9>0){
+            document.getElementById("p9").style.display = "block"
+            if(camera3>0){
+                document.getElementById("p1").style.display = "block"
+            }
+        } else if(c4v10>0){
+            document.getElementById("p10").style.display = "block"
+        }
+    }
+
+    function C4P43() {
+        if(B>0) {
+            if(Ri>0) {
+                if(Ra>0) {
+                    document.getElementById("pBRiRa").style.display = "block";
+                } else {
+                    document.getElementById("pBRi").style.display = "block";
+                }
+            } else {
+                if(Ra>0) {
+                    document.getElementById("pBRa").style.display = "block";
+                } else {
+                    document.getElementById("pB").style.display = "block";
+                }
+            }
+        } else {
+            if(Ri>0) {
+                if(Ra>0) {
+                    document.getElementById("pRiRa").style.display = "block";
+                } else {
+                    document.getElementById("pRi").style.display = "block";
+                }
+            } else {
+                if(Ra>0) {
+                    document.getElementById("pRa").style.display = "block";
+                }
+            }
+        }
+    }
+    function C4P46() {
+        if(cucina>0) {
+                document.getElementById("p1").style.display = "block";
+            } else {
+                document.getElementById("p2").style.display = "block";
+            }
+        if(Ra>0) {
+            if(B>0) {
+                document.getElementById("pRaB").style.display = "block";
+            } else {
+                document.getElementById("pRa").style.display = "block";
+            }
+        } else {
+            if(B>0) {
+                document.getElementById("pB").style.display = "block";
+            } else {
+                document.getElementById("pP").style.display = "block";
+            }
+        }
+    }
+    function C4P45() {
+        if(chiave>0) {
+                document.getElementById("p1").style.display = "block";
+            } else if(scarpe>1) {
+                document.getElementById("p2").style.display = "block";
+            } else {
+                document.getElementById("p3").style.display = "block";
+            }
+        if(Ra>0) {
+            if(Ri>0) {
+                document.getElementById("pRaRi").style.display = "block";
+            } else {
+                document.getElementById("pRa").style.display = "block";
+            }
+        } else {
+            if(Ri>0) {
+                document.getElementById("pRi").style.display = "block";
+            } else {
+                document.getElementById("pP").style.display = "block";
+            }
+        }
+    }
+    function C4P44() {
+        if(B>0) {
+            if(Ri>0) {
+                document.getElementById("pBRi").style.display = "block";
+            } else {
+                document.getElementById("pB").style.display = "block";
+            }
+        } else {
+            if(Ri>0) {
+                document.getElementById("pRi").style.display = "block";
+            } else {
+                document.getElementById("pP").style.display = "block";
+            }
+        }
+    }
+
+    //C5
+    function C5P1() {
+        if(scarpe>0) {
+            document.getElementById("p2").style.display = "block";
+
+        } else {
+            document.getElementById("p1").style.display = "block";
+        }
+    }
+    function C5P6() {
+        if(c5v1>0) {
+            document.getElementById("p1").style.display = "block";
+
+        }
+    }
+    function C5P7() {
+        if(c5v2>0) {
+            document.getElementById("p2").style.display = "block";
+        } else if(c5v3>0) {
+            document.getElementById("p3").style.display = "block";
+        } else if(c5v4>0) {
+            document.getElementById("p4").style.display = "block";
+        }
+    }
+    function C5P14() {
+        if(c5v5>0) {
+            document.getElementById("p5").style.display = "block";
+        } else if(c5v6>0) {
+            document.getElementById("p6").style.display = "block";
+        }
+    }
+    function C5P10() {
+        if(c5v7>0) {
+            document.getElementById("p7").style.display = "block";
+        } else if(c5v8>0) {
+            document.getElementById("p8").style.display = "block";
+        }
+        if(c5v9>0) {
+            document.getElementById("p9").style.display = "block";
+        } else if(c5v10>0) {
+            document.getElementById("p10").style.display = "block";
+        }
+    }
+

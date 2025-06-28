@@ -87,6 +87,8 @@ button {
     padding: 10px;
     color: #000000;
     transition: background-color 0.3s;
+    display: block;
+    margin-top: 20px;
 }
 
 
@@ -117,6 +119,13 @@ p{
     font-weight: 200;
     color: white;
 }
+
+p:has(button) {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
 
 .infondo {
     position: absolute; 
