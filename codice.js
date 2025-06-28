@@ -1564,7 +1564,12 @@ function TornaHome() {
 //C3
     function risposta_c3p2() {
         if(RelMadre>0){
-            window.location.href='c3-5.html'
+            if(discorso_madre>0){
+                window.location.href='c3-4.html'
+            } else {
+                window.location.href='c3-5.html'
+            }
+            
         } else {
             window.location.href='c3-4.html'
         }
@@ -1639,7 +1644,15 @@ function TornaHome() {
         }
     }
     function risposta_stagno() {
-        if(bagno>0){
+        salvaVariabile('c3v1', 0);
+        c3v1 = recuperaVariabile('c3v1');
+        if(bagno>1){
+            if(RelMadre>0){
+                window.location.href='c3-28.html'
+            } else {
+                window.location.href='c3-31.html'
+            }      
+        } else if(bagno>0){
             window.location.href='c3-22.html'        
         } else {
             if(RelMadre>0){
