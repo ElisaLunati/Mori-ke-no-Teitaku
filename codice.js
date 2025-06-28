@@ -2,7 +2,7 @@
 // Aggiungi questo codice in fondo al tuo file codice.js
 
 // Funzione per creare il pannello di debug
-function createDebugPanel() {
+/*function createDebugPanel() {
     const debugPanel = document.createElement('div');
     debugPanel.id = 'debug-panel';
     debugPanel.style.position = 'fixed';
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Aggiorna ogni 2 secondi
     setInterval(updateDebugPanel, 2000);
-});
+});*/
 
 
 //DIFFERENZIA ESPERIENZA PER I GIOCATORI
