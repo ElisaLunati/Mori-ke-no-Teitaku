@@ -1576,7 +1576,9 @@ function TornaHome() {
     }
     function risposta_SalaMensa() {
         if(mensa>0){
-            if(cucina>0) {
+            if(cucina>1){
+             window.location.href='c3-7.html'    
+            } else if(cucina>0) {
                 if(RelMadre>0){
                     window.location.href='c3-8.html'
                 } else {
