@@ -1822,7 +1822,9 @@ function TornaHome() {
     //C4
     function risposta_SalaMensa4() {
         if(mensa>0){
-            if(cucina>0) {
+            if(cucina>1){
+             window.location.href='c4-3.html'    
+            } else if(cucina>0) {
                 if(RelMadre>0){
                     window.location.href='c4-4.html'
                 } else {
