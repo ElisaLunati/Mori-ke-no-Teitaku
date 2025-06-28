@@ -2550,6 +2550,7 @@ function risposta_c2v19() {
             salvaVariabile('camera2', 2);
             document.getElementById("p14").style.display = "block"
         } else {
+            salvaVariabile('camera2', 1);
             document.getElementById("p12").style.display = "block"
         }
     }
