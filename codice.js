@@ -2547,7 +2547,7 @@ function risposta_c2v19() {
         if(camera2>1){
             document.getElementById("p13").style.display = "block"
         } else if(camera2>0){
-            salvaVariabile('camera2',2);
+            salvaVariabile('camera2', 2);
             document.getElementById("p14").style.display = "block"
         } else {
             document.getElementById("p12").style.display = "block"
