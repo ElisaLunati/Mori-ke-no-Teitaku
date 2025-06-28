@@ -1237,6 +1237,13 @@ function TornaHome() {
         c2v15 = recuperaVariabile('c2v15');
         window.location.href='c2-30.html'
     }
+function risposta_c2v19() {
+        salvaVariabile('c2v19', 1);
+        c2v19 = recuperaVariabile('c2v19');
+        salvaVariabile('scarpe', 1);
+        scarpe = recuperaVariabile('scarpe');
+        window.location.href='c2-33.html'
+    }
     function risposta_c2p33() {
         salvaVariabile('ricreazione', 1);
         ricreazione = recuperaVariabile('ricreazione');
