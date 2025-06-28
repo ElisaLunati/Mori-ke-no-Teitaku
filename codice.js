@@ -210,14 +210,14 @@ var c1v14 = recuperaVariabile('c1v14');
 if (c1v14 == null) {
     c1v14 = 0;
     salvaVariabile('c1v14', 0);
-}
+}*/
 
 var relazione_gatto = recuperaVariabile('relGatto');
 if (relazione_gatto == null) {
     relazione_gatto = 0;
     salvaVariabile('relGatto', 0);
 }
-*/
+
    for (var i = 1; i <= 15; i++) {
     var nomeVar = 'c1v' + i;
     var valore = recuperaVariabile(nomeVar);
