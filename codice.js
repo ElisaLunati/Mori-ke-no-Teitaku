@@ -2,7 +2,7 @@
 // Aggiungi questo codice in fondo al tuo file codice.js
 
 // Funzione per creare il pannello di debug
-/*function createDebugPanel() {
+function createDebugPanel() {
     const debugPanel = document.createElement('div');
     debugPanel.id = 'debug-panel';
     debugPanel.style.position = 'fixed';
@@ -99,8 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Aggiorna ogni 2 secondi
     setInterval(updateDebugPanel, 2000);
-});*/
-
+});
 
 //DIFFERENZIA ESPERIENZA PER I GIOCATORI
 function login() {
@@ -1298,8 +1297,9 @@ function risposta_c2v19() {
         window.location.href='c2-43.html'
     }
     function risposta_c2v24() {
-        salvaVariabile('c2v23', 1);
-        c2v23 = recuperaVariabile('c2v23');
+        salvaVariabile('c2v24', 1);
+        c2v24 = recuperaVariabile('c2v24');
+        salvaVariabile('altarino', 1);
         if(RelMadre<=0) {
             salvaVariabile('RelMadre', 1);
             RelMadre = recuperaVariabile('RelMadre');
@@ -1320,7 +1320,7 @@ function risposta_c2v19() {
             }
         } else {
             if(visto_donna>0){
-                salvaVariabile('c2v259', 1);
+                salvaVariabile('c2v29', 1);
                 c2v29 = recuperaVariabile('c2v29');
                 if(altarino>0){
                     window.location.href='c2-56.html'
