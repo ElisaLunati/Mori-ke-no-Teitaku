@@ -1766,7 +1766,7 @@ function risposta_c2v19() {
         window.location.href='c3-49.html'
     }
     function GameOver3_56() {
-        window.location.href='c3-49.html'
+        window.location.href='c3-55.html'
     }
     function GameOver3_61() {
         window.location.href='c3-60.html'
