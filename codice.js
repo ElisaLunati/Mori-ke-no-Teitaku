@@ -2290,12 +2290,11 @@ function risposta_c2v19() {
     function C2P26() {
         if(c2v9>0){
         document.getElementById("p9").style.display = "block";  
-        document.getElementById("p10").style.display = "none";"block";  
+        document.getElementById("p10").style.display = "none"; 
         } else if(c2v10>0){
         document.getElementById("p9").style.display = "none";  
         document.getElementById("p10").style.display = "block"; 
         } else {
-            alert("Qualcosa è andato storto. Manca il primo pezzo di questa pagina");
         document.getElementById("p10").style.display = "none";  
         document.getElementById("p9").style.display = "none";  
         }
