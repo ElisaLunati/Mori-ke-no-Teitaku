@@ -1174,7 +1174,7 @@ function TornaHome() {
         if(fuga>0){
             window.location.href='c2-25.html'
         } else {
-            window.location.href='c2-25.html'
+            window.location.href='c2-26.html'
         }
     }
     function risposta_c2v9() {
@@ -1183,14 +1183,14 @@ function TornaHome() {
         if(fuga>0){
             window.location.href='c2-25.html'
         } else {
-            window.location.href='c2-25.html'
+            window.location.href='c2-26.html'
         }
     }
     function risposta_c2v9_5() {
         if(fuga>0){
             window.location.href='c2-25.html'
         } else {
-            window.location.href='c2-25.html'
+            window.location.href='c2-26.html'
         }
     }
     function risposta_c2v77() {
@@ -2290,11 +2290,12 @@ function risposta_c2v19() {
     function C2P26() {
         if(c2v9>0){
         document.getElementById("p9").style.display = "block";  
-        document.getElementById("p10").style.display = "none"; 
+        document.getElementById("p10").style.display = "none";"block";  
         } else if(c2v10>0){
         document.getElementById("p9").style.display = "none";  
         document.getElementById("p10").style.display = "block"; 
         } else {
+            alert("Qualcosa è andato storto. Manca il primo pezzo di questa pagina");
         document.getElementById("p10").style.display = "none";  
         document.getElementById("p9").style.display = "none";  
         }
