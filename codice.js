@@ -1174,7 +1174,7 @@ function TornaHome() {
         if(fuga>0){
             window.location.href='c2-25.html'
         } else {
-            window.location.href='c2-26.html'
+            window.location.href='c2-25.html'
         }
     }
     function risposta_c2v9() {
@@ -1183,14 +1183,14 @@ function TornaHome() {
         if(fuga>0){
             window.location.href='c2-25.html'
         } else {
-            window.location.href='c2-26.html'
+            window.location.href='c2-25.html'
         }
     }
     function risposta_c2v9_5() {
         if(fuga>0){
             window.location.href='c2-25.html'
         } else {
-            window.location.href='c2-26.html'
+            window.location.href='c2-25.html'
         }
     }
     function risposta_c2v77() {
