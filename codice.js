@@ -1195,15 +1195,21 @@ function TornaHome() {
     }
     function risposta_c2v77() {
         salvaVariabile('c2v77', 1);
+        salvaVariabile('c2v78', 0);
+        salvaVariabile('c2v79', 0);
         c2v77 = recuperaVariabile('c2v77');
         window.location.href='c2-14.html'
     }
     function risposta_c2v78() {
+        salvaVariabile('c2v77', 0);
         salvaVariabile('c2v78', 1);
+        salvaVariabile('c2v79', 0);
         c2v78 = recuperaVariabile('c2v78');
         window.location.href='c2-14.html'
     }
     function risposta_c2v79() {
+        salvaVariabile('c2v77', 0);
+        salvaVariabile('c2v78', 0);
         salvaVariabile('c2v79', 1);
         c2v79 = recuperaVariabile('c2v79');
         window.location.href='c2-14.html'
